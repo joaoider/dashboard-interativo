@@ -1,0 +1,49 @@
+# 🐳 Docker Compose para Dashboard Interativo
+# 🚀 Desenvolvido por: João Silva
+
+version: '3.8'
+
+services:
+  dashboard:
+    build: .
+    container_name: dashboard-analytics
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Serviço opcional para banco de dados
+  # postgres:
+  #   image: postgres:13
+  #   container_name: dashboard-db
+  #   environment:
+  #     POSTGRES_DB: dashboard
+  #     POSTGRES_USER: admin
+  #     POSTGRES_PASSWORD: password123
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   ports:
+  #     - "5432:5432"
+  #   restart: unless-stopped
+
+  # Serviço opcional para Redis (cache)
+  # redis:
+  #   image: redis:6-alpine
+  #   container_name: dashboard-cache
+  #   ports:
+  #     - "6379:6379"
+  #   restart: unless-stopped
+
+volumes:
+  postgres_data:
