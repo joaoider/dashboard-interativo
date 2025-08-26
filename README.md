@@ -1,4 +1,4 @@
-# 📊 Dashboard Interativo de Analytics - Data Science
+# 📊 Interactive Analytics Dashboard - Data Science
 
 <div align="center">
 
@@ -8,178 +8,169 @@
 ![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 
-**Dashboard interativo para análise de dados e monitoramento de KPIs em tempo real**
+**Interactive dashboard for data analysis and real-time KPI monitoring**
 
 </div>
 
 ---
 
-## 🎯 **Visão Geral**
+## 🎯 **Overview**
 
-Dashboard interativo desenvolvido com **Streamlit** para análise de dados e monitoramento de KPIs em tempo real. O projeto demonstra habilidades avançadas em visualização de dados, análise exploratória e criação de interfaces responsivas.
+Interactive dashboard developed with **Streamlit** for data analysis and real-time KPI monitoring. The project demonstrates advanced skills in data visualization, exploratory analysis, and responsive interface creation.
 
-### 🔑 **Características Principais:**
-- **📊 Visualizações Interativas**: Gráficos responsivos com Plotly
-- **🔄 Tempo Real**: Atualização automática de dados
-- **🎛️ Filtros Avançados**: Múltiplas dimensões de análise
-- **📱 Design Responsivo**: Interface mobile-first
-- **📤 Export de Dados**: Relatórios em PDF/Excel
-- **🎨 Tema Personalizado**: Interface moderna e intuitiva
-
----
-
-## 🚀 **Demo Online**
-
-**🌐 Acesse o dashboard:** [Dashboard Interativo](https://dashboard-analytics.streamlit.app)
-
-**📱 Compatível com:** Desktop, Tablet e Mobile
+### 🔑 **Key Features:**
+- **📊 Interactive Visualizations**: Responsive charts with Plotly
+- **🔄 Real-time Updates**: Automatic data updates
+- **🎛️ Advanced Filters**: Multiple analysis dimensions
+- **📱 Responsive Design**: Mobile-first interface
+- **📤 Data Export**: PDF/Excel reports
+- **🎨 Custom Theme**: Modern and intuitive interface
 
 ---
 
-## 📁 **Estrutura do Projeto**
+## 🚀 **Live Demo**
+
+**🌐 Access the dashboard:** [Interactive Dashboard](https://dashboard-analytics.streamlit.app)
+
+**📱 Compatible with:** Desktop, Tablet and Mobile
+
+---
+
+## 📁 **Project Structure**
 
 ```
 dashboard-interativo/
-├── app.py                 # 🚀 Aplicação principal Streamlit
-├── pages/                 # 📄 Páginas do dashboard
-│   ├── 1_📊_Overview.py
-│   ├── 2_📈_Analytics.py
-│   ├── 3_🎯_KPIs.py
-│   └── 4_⚙️_Settings.py
-├── components/            # 🔧 Componentes reutilizáveis
-│   ├── charts.py         # 📊 Componentes de gráficos
-│   ├── filters.py        # 🎛️ Componentes de filtros
-│   └── utils.py          # 🛠️ Utilitários
-├── data/                  # 📊 Dados de exemplo
-│   ├── sample_data.csv
-│   └── kpis.json
-├── assets/                # 🎨 Recursos visuais
-│   ├── style.css
-│   └── images/
-├── requirements.txt       # 📦 Dependências
-└── README.md             # 📋 Este arquivo
+├── app.py                 # 🚀 Main Streamlit application
+├── requirements.txt       # 📦 Dependencies
+├── Dockerfile            # 🐳 Docker configuration
+├── docker-compose.yml    # 🐳 Docker Compose setup
+├── .github/              # 🔧 GitHub Actions workflows
+│   └── workflows/
+│       └── deploy.yml    # 🚀 Automated deployment
+├── .streamlit/           # ⚙️ Streamlit configuration
+└── README.md             # 📋 This file
 ```
 
 ---
 
-## 🛠️ **Tecnologias Utilizadas**
+## 🛠️ **Technologies Used**
 
 ### **🎨 Frontend & UI**
-- **Streamlit**: Framework para criação de apps web
-- **CSS**: Estilização personalizada
-- **HTML**: Estrutura das páginas
+- **Streamlit**: Web app creation framework
+- **CSS**: Custom styling
+- **HTML**: Page structure
 
-### **📊 Visualização de Dados**
-- **Plotly**: Gráficos interativos e responsivos
-- **Matplotlib**: Gráficos estáticos
-- **Seaborn**: Visualizações estatísticas
+### **📊 Data Visualization**
+- **Plotly**: Interactive and responsive charts
+- **Matplotlib**: Static charts
+- **Seaborn**: Statistical visualizations
 
-### **🔧 Backend & Processamento**
-- **Pandas**: Manipulação e análise de dados
-- **NumPy**: Computação numérica
-- **Scikit-learn**: Análise estatística
+### **🔧 Backend & Processing**
+- **Pandas**: Data manipulation and analysis
+- **NumPy**: Numerical computation
+- **Scikit-learn**: Statistical analysis
 
-### **📦 Deploy & Infraestrutura**
-- **Streamlit Cloud**: Hospedagem gratuita
-- **GitHub Actions**: CI/CD automatizado
-- **Docker**: Containerização (opcional)
+### **📦 Deployment & Infrastructure**
+- **Streamlit Cloud**: Free hosting
+- **GitHub Actions**: Automated CI/CD
+- **Docker**: Containerization
 
 ---
 
-## 📦 **Instalação e Uso**
+## 📦 **Installation and Usage**
 
-### **1. Clone o repositório**
+### **1. Clone the repository**
 ```bash
 git clone https://github.com/joaoider/dashboard-interativo.git
 cd dashboard-interativo
 ```
 
-### **2. Crie um ambiente virtual**
+### **2. Create a virtual environment**
 ```bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 ```
 
-### **3. Instale as dependências**
+### **3. Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-### **4. Execute o dashboard**
+### **4. Run the dashboard**
 ```bash
 streamlit run app.py
 ```
 
-### **5. Acesse no navegador**
+### **5. Access in browser**
 ```
 http://localhost:8501
 ```
 
 ---
 
-## 🎨 **Funcionalidades do Dashboard**
+## 🎨 **Dashboard Features**
 
-### **📊 Página 1: Overview**
-- **Resumo Executivo**: KPIs principais em cards
-- **Gráfico de Tendências**: Evolução temporal dos dados
-- **Distribuição Geográfica**: Mapa interativo
-- **Alertas**: Notificações de eventos importantes
+### **📊 Page 1: Overview**
+- **Executive Summary**: Main KPIs in cards
+- **Trend Chart**: Temporal data evolution
+- **Geographic Distribution**: Interactive map
+- **Alerts**: Important event notifications
 
-### **📈 Página 2: Analytics**
-- **Análise Exploratória**: Estatísticas descritivas
-- **Correlações**: Matriz de correlação interativa
-- **Segmentação**: Análise por categorias
-- **Outliers**: Detecção de valores atípicos
+### **📈 Page 2: Analytics**
+- **Exploratory Analysis**: Descriptive statistics
+- **Correlations**: Interactive correlation matrix
+- **Segmentation**: Category analysis
+- **Outliers**: Atypical value detection
 
-### **🎯 Página 3: KPIs**
-- **Dashboard de KPIs**: Métricas em tempo real
-- **Comparação Períodos**: Análise temporal
-- **Metas vs Realizado**: Performance tracking
-- **Alertas Inteligentes**: Notificações automáticas
+### **🎯 Page 3: KPIs**
+- **KPI Dashboard**: Real-time metrics
+- **Period Comparison**: Temporal analysis
+- **Target vs Actual**: Performance tracking
+- **Smart Alerts**: Automatic notifications
 
-### **⚙️ Página 4: Settings**
-- **Configurações**: Personalização do dashboard
-- **Usuários**: Gerenciamento de permissões
-- **Integrações**: Conexões com fontes de dados
-- **Backup**: Export/Import de configurações
+### **⚙️ Page 4: Settings**
+- **Configuration**: Dashboard customization
+- **Users**: Permission management
+- **Integrations**: Data source connections
+- **Backup**: Configuration export/import
 
 ---
 
-## 📊 **Exemplos de Visualizações**
+## 📊 **Visualization Examples**
 
-### **📈 Gráficos de Linha**
-- Tendências temporais
-- Comparação de séries
-- Análise sazonal
+### **📈 Line Charts**
+- Temporal trends
+- Series comparison
+- Seasonal analysis
 
-### **📊 Gráficos de Barras**
-- Ranking de categorias
-- Comparação de períodos
-- Análise de distribuição
+### **📊 Bar Charts**
+- Category ranking
+- Period comparison
+- Distribution analysis
 
-### **🎯 Gráficos de Pizza**
-- Composição percentual
+### **🎯 Pie Charts**
+- Percentage composition
 - Market share
-- Segmentação de clientes
+- Customer segmentation
 
-### **🗺️ Mapas Interativos**
-- Distribuição geográfica
-- Heatmaps regionais
-- Análise por localização
+### **🗺️ Interactive Maps**
+- Geographic distribution
+- Regional heatmaps
+- Location-based analysis
 
-### **📉 Gráficos de Dispersão**
-- Correlações entre variáveis
-- Análise de clusters
-- Detecção de outliers
+### **📉 Scatter Plots**
+- Variable correlations
+- Cluster analysis
+- Outlier detection
 
 ---
 
-## 🔧 **Configurações Avançadas**
+## 🔧 **Advanced Configuration**
 
-### **🎨 Personalização de Tema**
+### **🎨 Theme Customization**
 ```python
-# Configuração do tema no app.py
+# Theme configuration in app.py
 st.set_page_config(
     page_title="Dashboard Analytics",
     page_icon="📊",
@@ -188,14 +179,14 @@ st.set_page_config(
 )
 ```
 
-### **📊 Configuração de Gráficos**
+### **📊 Chart Configuration**
 ```python
-# Exemplo de gráfico Plotly personalizado
+# Example of customized Plotly chart
 fig = px.line(
     data_frame=df,
-    x='data',
-    y='valor',
-    title='Evolução Temporal',
+    x='date',
+    y='value',
+    title='Temporal Evolution',
     template='plotly_dark'
 )
 fig.update_layout(
@@ -205,39 +196,39 @@ fig.update_layout(
 )
 ```
 
-### **🔄 Atualização Automática**
+### **🔄 Automatic Updates**
 ```python
-# Atualização automática a cada 5 minutos
-if st.button('🔄 Atualizar Dados'):
-    with st.spinner('Atualizando dados...'):
+# Automatic update every 5 minutes
+if st.button('🔄 Update Data'):
+    with st.spinner('Updating data...'):
         update_data()
-        st.success('Dados atualizados com sucesso!')
+        st.success('Data updated successfully!')
 ```
 
 ---
 
-## 📱 **Responsividade e Mobile**
+## 📱 **Responsiveness and Mobile**
 
-### **🎯 Design Mobile-First**
-- Layout adaptativo para diferentes tamanhos de tela
-- Componentes otimizados para touch
-- Navegação intuitiva em dispositivos móveis
+### **🎯 Mobile-First Design**
+- Adaptive layout for different screen sizes
+- Touch-optimized components
+- Intuitive navigation on mobile devices
 
-### **📱 Funcionalidades Mobile**
-- Swipe gestures para navegação
-- Botões com tamanho adequado para touch
-- Gráficos responsivos
+### **📱 Mobile Features**
+- Swipe gestures for navigation
+- Touch-appropriate button sizes
+- Responsive charts
 
 ---
 
-## 🚀 **Deploy e Produção**
+## 🚀 **Deployment and Production**
 
-### **☁️ Streamlit Cloud (Recomendado)**
-1. Conecte seu repositório GitHub
-2. Configure as variáveis de ambiente
-3. Deploy automático a cada push
+### **☁️ Streamlit Cloud (Recommended)**
+1. Connect your GitHub repository
+2. Configure environment variables
+3. Automatic deployment on each push
 
-### **🐳 Docker (Opcional)**
+### **🐳 Docker (Optional)**
 ```dockerfile
 FROM python:3.9-slim
 WORKDIR /app
@@ -260,90 +251,90 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Deploy to Streamlit Cloud
-        run: echo "Deploy automático configurado"
+        run: echo "Automatic deployment configured"
 ```
 
 ---
 
-## 📈 **Métricas de Performance**
+## 📈 **Performance Metrics**
 
-### **⚡ Velocidade**
-- **Tempo de Carregamento**: < 2 segundos
-- **Renderização de Gráficos**: < 1 segundo
-- **Atualização de Dados**: < 500ms
+### **⚡ Speed**
+- **Loading Time**: < 2 seconds
+- **Chart Rendering**: < 1 second
+- **Data Updates**: < 500ms
 
-### **📱 Usabilidade**
-- **Taxa de Engajamento**: 85%+
-- **Tempo de Sessão**: 15+ minutos
-- **Usuários Ativos**: 100+ diários
+### **📱 Usability**
+- **Engagement Rate**: 85%+
+- **Session Time**: 15+ minutes
+- **Active Users**: 100+ daily
 
-### **🔧 Estabilidade**
+### **🔧 Stability**
 - **Uptime**: 99.9%
-- **Erros**: < 0.1%
-- **Backup**: Automático diário
+- **Errors**: < 0.1%
+- **Backup**: Daily automatic
 
 ---
 
-## 🤝 **Contribuição**
+## 🤝 **Contribution**
 
-### **🔧 Como Contribuir**
-1. **Fork** o projeto
-2. **Clone** o repositório
-3. **Crie** uma branch para sua feature
-4. **Desenvolva** a funcionalidade
-5. **Teste** localmente
-6. **Commit** suas mudanças
-7. **Push** para a branch
-8. **Abra** um Pull Request
+### **🔧 How to Contribute**
+1. **Fork** the project
+2. **Clone** the repository
+3. **Create** a branch for your feature
+4. **Develop** the functionality
+5. **Test** locally
+6. **Commit** your changes
+7. **Push** to the branch
+8. **Open** a Pull Request
 
-### **🐛 Reportar Bugs**
-- Use as **Issues** do GitHub
-- Descreva o problema detalhadamente
-- Inclua screenshots se possível
-- Especifique o ambiente (OS, versão Python, etc.)
+### **🐛 Report Bugs**
+- Use **GitHub Issues**
+- Describe the problem in detail
+- Include screenshots if possible
+- Specify the environment (OS, Python version, etc.)
 
-### **💡 Sugerir Features**
-- Abra uma **Issue** com label "enhancement"
-- Descreva a funcionalidade desejada
-- Explique o benefício para os usuários
-- Inclua mockups se possível
+### **💡 Suggest Features**
+- Open an **Issue** with "enhancement" label
+- Describe the desired functionality
+- Explain the benefit for users
+- Include mockups if possible
 
 ---
 
-## 📚 **Documentação Adicional**
+## 📚 **Additional Documentation**
 
-### **📖 Guias de Uso**
-- [Primeiros Passos](docs/getting-started.md)
-- [Configuração Avançada](docs/advanced-config.md)
+### **📖 Usage Guides**
+- [Getting Started](docs/getting-started.md)
+- [Advanced Configuration](docs/advanced-config.md)
 - [Troubleshooting](docs/troubleshooting.md)
 
-### **🎥 Vídeos Tutoriais**
-- [Instalação e Configuração](https://youtube.com/watch?v=...)
-- [Criando Visualizações](https://youtube.com/watch?v=...)
-- [Deploy em Produção](https://youtube.com/watch?v=...)
+### **🎥 Video Tutorials**
+- [Installation and Setup](https://youtube.com/watch?v=...)
+- [Creating Visualizations](https://youtube.com/watch?v=...)
+- [Production Deployment](https://youtube.com/watch?v=...)
 
-### **💬 Comunidade**
+### **💬 Community**
 - [Discord](https://discord.gg/...)
 - [Slack](https://slack.com/...)
-- [Fórum](https://forum.dashboard.com)
+- [Forum](https://forum.dashboard.com)
 
 ---
 
-## 📄 **Licença**
+## 📄 **License**
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 📞 **Contato e Suporte**
+## 📞 **Contact and Support**
 
-### **👨‍💻 Desenvolvedor**
-- **Nome**: João Silva
+### **👨‍💻 Developer**
+- **Name**: João Silva
 - **Email**: joao.silva@email.com
 - **LinkedIn**: [João Silva](https://www.linkedin.com/in/joao-silva)
 - **GitHub**: [joaoider](https://github.com/joaoider)
 
-### **🆘 Suporte Técnico**
+### **🆘 Technical Support**
 - **Issues**: [GitHub Issues](https://github.com/joaoider/dashboard-interativo/issues)
 - **Email**: suporte@dashboard.com
 - **WhatsApp**: +55 (11) 99999-9999
@@ -352,8 +343,8 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 
 <div align="center">
 
-**⭐ Se este projeto te ajudou, considere dar uma estrela! ⭐**
+**⭐ If this project helped you, consider giving it a star! ⭐**
 
-**🚀 Transforme seus dados em insights visuais impressionantes! 🚀**
+**🚀 Transform your data into impressive visual insights! 🚀**
 
 </div>
